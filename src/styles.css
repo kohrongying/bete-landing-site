@@ -1,0 +1,43 @@
+header.hero {
+  /* background-image: url('./assets/hero.jpg'); */
+  height: 300px; /* You must set a specified height */
+  /* background-position: bottom; Center the image */
+  /* background-repeat: no-repeat; Do not repeat the image */
+  /* background-size: cover; Resize the background image to cover the entire container */
+  background-color: #16163A;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 100%;
+  color: white;
+}
+
+body {
+  padding-top: 0;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+hr#hero {
+  margin-top: 0;
+}
+
+.img-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+section#features {
+  background-color: white;
+}
+
+section#download, footer, footer hr {
+  background-color: #16163A;
+  color: white;
+}
