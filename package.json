@@ -14,5 +14,9 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-minify-html": "^1.0.6"
+  },
+  "dependencies": {
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^1.2.0"
   }
 }

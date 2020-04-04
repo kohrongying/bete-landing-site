@@ -4,9 +4,14 @@ const gulp = require('gulp'),
   minifyHTML = require('gulp-minify-html');
 
 function css() {
+  const postcss = require('gulp-postcss');
   return gulp
     .src('src/*.css') // Gets all files ending with .scss in app/scss and children dirs
-    .pipe(minifyCSS())
+    .pipe(postcss([
+      // ...
+      require('tailwindcss'),
+      minifyCSS
+    ]))
     .pipe(gulp.dest('dist'))
     .pipe(browsersync.stream());
 }

@@ -2,84 +2,127 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="https://via.placeholder.com/70x70">
-    <link rel="stylesheet" href="./mvp.css">
-    <link rel="stylesheet" href="./styles.css">
-    
-    <meta charset="utf-8">
-    <meta name="description" content="My description">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://via.placeholder.com/70x70">
 
-    <title>Bus Eta Bot</title>
+  <link rel="stylesheet" href="./styles.css">
+  
+  <meta charset="utf-8">
+  <meta name="description" content="My description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
+
+  <title>Bus Eta Bot</title>
 </head>
 
-<body>
-  <header class="hero">
-      <h1>Bus Eta Bot</h1>
-      <br>
-      <p>Find your bus timings from Telegram</p>
-      <br>
-      <p>
-        <a href="#"><b>Show me how &rarr;</b></a>
+<body class="text-gray-700 bg-white" style="font-family: 'Source Sans Pro', sans-serif">
+  
+<!-- hero -->
+<section id="hero" class="">
+  <nav>
+    <div class="container mx-auto px-6 py-4 flex justify-end items-center">
+      <div class="hidden lg:block">
+        <ul class="inline-flex">
+          <li><a class="px-4 text-white hover:text-orange-500" href="#cta">Download</a></li>
+          <li><a class="px-4 text-white hover:text-orange-500" href="#features">Features</a></li>
+          <li><a class="px-4 text-white hover:text-orange-500" href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mx-auto px-6 py-40 text-center">
+    <h2 class="text-6xl font-bold mb-2 text-white">
+      Bus Eta Bot
+    </h2>
+    <h3 class="text-2xl mb-8 text-gray-200">
+      Find your bus timings from Telegram
+    </h3>
+
+    <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+      Show me how
+    </button>
+  </div>
+</section>
+
+<!-- features -->
+<section id="features" class="container mx-auto px-6 py-20">
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-20">
+    Features
+  </h2>
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Get Bus ETAs from Telegram</h4>
+      <p class="text-gray-600 mb-8">Just use bus stop number.</p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="./assets/eta-query.png" alt="ETA Query" />
+    </div>
+  </div>
+
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <img src="./assets/nearby-bus-stops.png" alt="Nearby Bus Stops" />
+    </div>
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Get nearby bus stops</h4>
+      <p class="text-gray-600 mb-8">Send location, including your current one</p>
+    </div>
+  </div>
+
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Search for bus stops by keyword</h4>
+      <p class="text-gray-600 mb-8">Use inline queries</p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="./assets/search-bus-stops.png" alt="Searching bus stops" />
+    </div>
+  </div>
+</section>
+  
+
+<!-- call to action -->
+<section id="cta" class="bg-gray-600">
+  <div class="container mx-auto px-6 text-center py-40">
+    <h2 class="mb-6 text-4xl font-bold text-center text-white">
+      Get to where you need to be
+    </h2>
+    <button
+      class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider"
+    >
+      Get it for free
+    </button>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="footer" style="background-color: #16163A;">
+  <div class="container mx-auto px-6 py-8">
+    <div class="pt-8 pb-8">
+      <h3 class="mb-6 text-2xl font-bold text-white">
+        Bus Eta Bot
+      </h3>
+      <p class="mb-6 text-xl text-white">
+        Have an enquiry?
+        <a href="#">Contact me.</a>
       </p>
-  </header>
-
-  
-  <section id="features">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#16163A" fill-opacity="1" d="M0,128L80,154.7C160,181,320,235,480,229.3C640,224,800,160,960,144C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-    </svg>
-    <header>
-      <h1>Features</h1>
-    </header>
-    <div class="img-wrapper">
-      <img src="./assets/eta-query.png" />
-      <div>
-        <h2>Get Bus ETAs from Telegram</h2>
-        <p>Just use bus stop number</p>
-      </div>
     </div>
-
-    <div class="img-wrapper">
-      <div>
-        <h2>Get nearby bus stops</h2>
-        <p>Send location, including your current one</p>
-      </div>
-      <img src="./assets/nearby-bus-stops.png" />
-    </div>
-
-    <div class="img-wrapper">
-      <img src="./assets/search-bus-stops.png" />
-      <div>
-        <h2>Search for bus stops by keyword</h2>
-        <p>Use inline queries</p>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#16163A" fill-opacity="1" d="M0,128L80,154.7C160,181,320,235,480,229.3C640,224,800,160,960,144C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-    </svg>
-  </section>
-
-  
-  <section id="download">
     <hr>
-    <header>
-      <h1>
-        Use Bus Eta Bot for free
-      </h1>
-      <p>
-        <a href="#"><b>Download for telegram &rarr;</b></a>
-      </p>
-    </header>
-  </section>
-  <footer>
-    <p>
-      Developed by ©
-      <a href="https://jiayu.co">Jiayu</a>
-      2020
-    </p>
-  </footer>
-
+    <div class="flex flex-wrap pt-8">
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <a href="#" class="hover:underline text-gray-300 hover:text-orange-500 mr-8">
+          Terms of Use
+        </a>
+        <a href="#" class="hover:underline text-gray-300 hover:text-orange-500">
+          Privacy Policy
+        </a>
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-right">
+        <a href="https://jiayu.co" class="hover:underline text-gray-300 hover:text-orange-500">© Jiayu 2020</a>
+          
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 
