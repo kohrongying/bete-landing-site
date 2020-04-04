@@ -12,7 +12,7 @@ function css() {
       require('tailwindcss'),
       minifyCSS
     ]))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
     .pipe(browsersync.stream());
 }
 
@@ -20,7 +20,7 @@ function html() {
   return gulp
     .src('src/*.html')
     .pipe(minifyHTML())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
     .pipe(browsersync.stream());
 }
 
@@ -28,7 +28,7 @@ function html() {
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./dist/"
+      baseDir: "./docs/"
     },
     port: 3000
   });
