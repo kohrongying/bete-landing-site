@@ -10921,6 +10921,16 @@ video {
   background-color: #c9c9c9;
 }
 
+#diagonal-box {
+  transform: skewY(-3deg);
+}
+
+#diagonal-box div div 
+
+{
+  transform: skewY(3deg);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

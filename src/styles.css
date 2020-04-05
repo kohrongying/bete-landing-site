@@ -18,3 +18,13 @@
   background-size: cover;
   background-color: #c9c9c9;
 }
+
+#diagonal-box {
+  transform: skewY(-3deg);
+}
+
+#diagonal-box div div 
+
+{
+	transform: skewY(3deg);
+}
