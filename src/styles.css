@@ -4,6 +4,30 @@
 
 @tailwind utilities;
 
+.nav-link {
+  @apply px-4 text-white;
+}
+
+.my-wrapper { 
+  @apply mx-auto px-6;
+}
+
+.section-title {
+  @apply mb-6 text-4xl font-bold text-center;
+}
+
+.title {
+  @apply text-3xl text-gray-800 font-bold mb-3;
+}
+
+.subtitle {
+  @apply text-gray-600 mb-8;
+}
+
+.btn {
+  @apply bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider;
+}
+
 #hero {
   background-image: url('./assets/hero.jpg');
   background-position: center;
