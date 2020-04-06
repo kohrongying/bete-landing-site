@@ -4,6 +4,8 @@ const gulp = require('gulp'),
   cleanCSS  = require('gulp-clean-css'),
   htmlmin = require('gulp-htmlmin');
 
+const BUILD_FOLDER = 'docs';
+
 function css() {
   const postcss = require('gulp-postcss');
   return gulp
@@ -12,14 +14,14 @@ function css() {
       require('tailwindcss'),
       cleanCSS
     ]))
-    .pipe(gulp.dest('docs'))
+    .pipe(gulp.dest(BUILD_FOLDER))
     .pipe(browsersync.stream());
 }
 
 function images() {
   return gulp 
     .src('src/assets/*')
-    .pipe(gulp.dest('docs/assets'))
+    .pipe(gulp.dest(`${BUILD_FOLDER}/assets`))
     .pipe(browsersync.stream());
 }
 
@@ -27,19 +29,19 @@ function html() {
   return gulp
     .src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('docs'))
+    .pipe(gulp.dest(BUILD_FOLDER))
     .pipe(browsersync.stream());
 }
 
 async function clean() {
-  return del(['docs', 'docs/assets'])
+  return del([BUILD_FOLDER])
 }
 
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./docs/"
+      baseDir: BUILD_FOLDER
     },
     port: 3000
   });
